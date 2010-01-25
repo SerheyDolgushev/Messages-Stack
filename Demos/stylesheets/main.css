@@ -1,0 +1,50 @@
+* {
+padding:0px;
+margin:0px;
+}
+
+div.clearb {
+clear:both;
+}
+
+h3 {
+margin:10px 0 5px 60px;
+color:rgb(70, 129, 117);
+}
+
+div#body {
+background-color:rgb(240, 240, 240);
+border:1px solid rgb(206, 207, 208);
+width:600px;
+position:absolute;
+left:50%;
+margin:10px 0px 10px -300px;
+height:250px;
+}
+
+div#notify-message-form {
+height:250px;
+float:left;
+padding:20px;
+}
+
+div#notify-message-form div{
+padding:3px;
+margin-left:40px;
+}
+
+div#notify-message-form div span,
+div#notify-message-form div select,
+div#notify-message-form div textarea {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-style:normal;
+font-weight:normal;
+float:left;
+width:160px;
+}
+
+div#notify-message-form div textarea {
+width:300px;
+height:80px;
+}

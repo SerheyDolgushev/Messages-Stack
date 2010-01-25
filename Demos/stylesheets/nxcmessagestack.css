@@ -1,0 +1,53 @@
+* {
+padding:0px;
+margin:0px;
+}
+
+div.nxc-message-stack {
+position:fixed;
+top:0px;
+right:0px;
+width:250px;
+margin: 10px 40px 0px 0px;
+}
+
+div.nxc-message-error,
+div.nxc-message-warning,
+div.nxc-message-notice {
+margin:15px 5px 5px 5px;
+text-align:justify;
+position:relative;
+}
+
+a.nxc-message-close-button {
+position:absolute;
+top:0;
+right:0;
+width:30px;
+height:30px;
+display:block;
+background-image: url('../images/close.png');
+margin: -15px -15px 0px 0px;
+}
+
+
+div.nxc-message-error {
+background-color:#F9D2D2;
+border:3px solid #FF2A2A;
+padding:5px;
+color:#FF2A00;
+}
+
+div.nxc-message-warning {
+background-color:#FDE6B5;
+border:3px solid #FFAA00;
+padding:5px;
+color:#FF7F00;
+}
+
+div.nxc-message-notice {
+background-color:#DAF8DA;
+border:3px solid #146D14;
+padding:5px;
+color:#0F530F;
+}

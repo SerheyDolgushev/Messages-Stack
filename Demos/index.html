@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="stylesheets/main.css" />
+	<link rel="stylesheet" href="stylesheets/nxcmessagestack.css" />
+
+	<script type="text/javascript" src="javascript/mootools-1.2.4-core-nc.js"></script>
+	<script type="text/javascript" src="javascript/mootools-1.2.4.2-more.js"></script>
+	<script type="text/javascript" src="../Source/NXC.NotifyMessage.js"></script>
+	<script type="text/javascript" src="../Source/NXC.MessageStack.js"></script>
+	
+	<script type="text/javascript">
+	window.addEvent( 'domready', function() {
+		var messageStack = new NXC.MessageStack();
+		document.id( 'showMessage' ).addEvent( 'click', function( e ) {
+			e.stop();
+			messageStack.showMessage(
+				document.id( 'messageContent' ).get( 'value' ),
+				document.id( 'messageType' ).get( 'value' ),
+				{
+					'hideTimeout': document.id( 'messageTimeout' ).get( 'value' )
+				}
+			);
+		} );
+	} );
+	</script>
+ 
+	<title>Mootools lightweight notify messages</title>
+</head>
+<body>
+ <div id="body">
+  <h3>Lightweight notify messages</h3>
+  <div id="notify-message-form">
+
+   <div>
+    <span>Select message type:</span>
+	<select id="messageType">
+	 <option value="notice">Notice</option>
+	 <option value="warning">Warning</option>
+	 <option value="error">Error</option>
+	</select>
+	<div class="clearb"></div>
+   </div>
+
+   <div>
+    <span>Hide after:</span>
+	<select id="messageTimeout">
+	 <option value="0">Don`t hide at all</option>
+	 <option value="2000">2 sec</option>
+	 <option value="5000">5 sec</option>
+	 <option value="10000">10 sec</option>
+	</select>
+	<div class="clearb"></div>
+   </div>
+
+   <div>
+    <span>Message content:</span>
+	<textarea id="messageContent">Test content</textarea>
+	<div class="clearb"></div>
+   </div>
+
+   <div>
+    <input type="button" id="showMessage" value="Show" />
+   </div>
+
+  </div>
+
+ </div>
+</body>
+</html>
