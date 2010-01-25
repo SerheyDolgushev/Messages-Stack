@@ -1,3 +1,18 @@
+/*
+---
+description: notify message.
+
+license: MIT-style
+
+authors:
+- Dolgushev Serhey (dolgushev.serhey@gmail.com)
+
+requires: core:1.2.4: '*'
+
+provides: [NXC.NotifyMessage]
+...
+*/
+
 var NXC = NXC || {};
 NXC.NotifyMessage = new Class( {
 

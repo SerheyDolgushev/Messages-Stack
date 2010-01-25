@@ -1,3 +1,18 @@
+/*
+---
+description: messages stack.
+
+license: MIT-style
+
+authors:
+- Dolgushev Serhey (dolgushev.serhey@gmail.com)
+
+requires: core:1.2.4: '*'
+
+provides: [NXC.MessageStack]
+...
+*/
+
 var NXC = NXC || {};
 NXC.MessageStack = new Class( {
 
